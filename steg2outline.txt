@@ -1,0 +1,32 @@
+Basic Idea
+
+1. Load an environment with multiple (maybe like 5) jpg files in it, 1 file
+   contains the password to retrieve info thats been embedded with steghide in 
+   the main jpg file.
+
+2. In the intro explain how files with hidden info can be larger than normal in order
+   to hide info in the image. A faster way to determine which file's binaries contain
+   hideen info is to look at the file sizes of the images, the one with the largest
+   (different) file size will be the one containing info in its binaries.
+
+3. Teach the user how to use hexdump to search for passwords within the correct
+   file. (teach: hexdump | grep | sed) this will give the password for the stegofile.
+   (this command we might need to give, its a little complex with the amount of
+    piped operations happening here)
+
+4. Once the password is retrieved the user will know the password to receive embedded
+   info from main jpg file. this knowledge should be retained from challenge 1.
+   (show the user how to use man to list capabilities of a given command?)
+
+5. Once embedded info is extracted have the user use cat to print txt file to the
+   terminal which will display the flag for the steg 2 challenge
+   (once again lets not tell them the exact command to run just mention cat in the
+   list of helpful commands given to the user in the instructions)
+
+example commands we might need to supply:
+hd -c 'somefile.jpg'
+This will display the binaries 
+
+hd -c 'somefile.jpg' | grep 'password' | sed 's/^.*: //'
+hexdump of jpg file, search binaries for instances of 'password' then return the
+text following the instance of 'password'
