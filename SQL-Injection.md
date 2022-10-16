@@ -16,13 +16,12 @@ Lets first begin by introducing what SQL is. SQL stands for structured query lan
 
 When you first start the challenge you should notice a terminal page with a few commands that you can run. These commands are:
 
-''' view <page> '''
-
-''' enter [form] '''
-
-''' press {element} '''
-
-''' exit '''
+``` 
+    view <page>
+    enter [form]
+    press {element}
+    exit
+```
 
 There are descriptors for each command on screen. If you ever want to go back and reference these commands, you can type in the following command.
 
