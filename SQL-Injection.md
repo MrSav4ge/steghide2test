@@ -25,9 +25,12 @@ When you first start the challenge you should notice a terminal page with a few 
 
 There are descriptors for each command on screen. If you ever want to go back and reference these commands, you can type in the following command.
 
-''' home '''
+```
+    home
+```
 
-To begin let’s start by viewing the index of pages available to you by entering “view index”. This should present you with a list of pages you can access which at this point should only be the login page. Use the view command again to enter this login page by entering “view login”. Now we have a few options from here we can enter in a username, enter in a password, or press login. First let’s enter some user credentials before we login. Start by using the enter command to access a username with the following command word for word. “enter username” after entering in that command you should be on a new line, from here type in the name of the user then press enter lets start with using “Avery”. Now we need to do the same entering process for the password, follow the previous steps and for the password enter “12345”. Now that our credentials are entered, we need to use the login button, use the command “press login” to login with the given credentials. If successful you should be brought back to the index of pages you can view with a new page being available to us, namely the account page. View the account page using the view command and we will see the user’s details. This is the information we will be attempting to steal from a user that we do not have the password to.
+To begin let’s start by viewing the index of pages available to you by entering 
+```view index``` This should present you with a list of pages you can access which at this point should only be the login page. Use the view command again to enter this login page by entering “view login”. Now we have a few options from here we can enter in a username, enter in a password, or press login. First let’s enter some user credentials before we login. Start by using the enter command to access a username with the following command word for word. “enter username” after entering in that command you should be on a new line, from here type in the name of the user then press enter lets start with using “Avery”. Now we need to do the same entering process for the password, follow the previous steps and for the password enter “12345”. Now that our credentials are entered, we need to use the login button, use the command “press login” to login with the given credentials. If successful you should be brought back to the index of pages you can view with a new page being available to us, namely the account page. View the account page using the view command and we will see the user’s details. This is the information we will be attempting to steal from a user that we do not have the password to.
 
 ## SQL Injection
 
