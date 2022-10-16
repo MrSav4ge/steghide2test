@@ -38,7 +38,7 @@ To begin let’s start by viewing the index of pages available to you by enterin
 
 Now let us try to login to another account in the DVWA database that we do not have access to. The username will be John, but we do not have his password. First if you are still on Avery’s account view the login page so we can enter the app as a new user. Now once again navigate to the login page and enter in ```John``` as the username. Pictured below is the code being used when entering in a user’s credentials.
 
-```sql_statement = '''SELECT * FROM USERS WHERE NAME = '{username}' AND PASSWORD = '{password}'```
+```sql_statement = "SELECT * FROM USERS WHERE NAME = '{username}' AND PASSWORD = '{password}'"```
 
 Here the line is the SQL statement being sent to the database in order to retrieve the correct user when the login button is pressed. The ```{username}``` will be substituted as John in this case and the ```{password}``` will similarly be substituted for anything we enter as the password. We need to trick the database into accepting this statement even if the password is not John’s actual password. To do this we will need to expand this statement to something that will always be true. In addition, notice the single quotation marks around the {password} we will need to account for these quotation marks as to not break the SQL statement’s syntax, if the syntax is incorrect the Query will not run, and we will not be able to access his account. Here are a few hints to get you started.
 
